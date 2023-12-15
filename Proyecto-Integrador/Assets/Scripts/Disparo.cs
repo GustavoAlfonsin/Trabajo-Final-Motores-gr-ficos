@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class Disparo : MonoBehaviour
 {
-  [SerializeField] private Transform controladorDisparo;
+    [SerializeField] private Transform ControladorDisparo;
 
-  [SerializeField] private GameObject bala;
-
-  private void Update() {
-    if (Input.GetButtonDown("Fire1"))
+    [SerializeField] private GameObject bala;
+    // Start is called before the first frame update
+    void Start()
     {
-        //Disparar
-        Disparar();
+        
     }
-  }
-  private void Disparar(){
-     Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
-  }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Disparar();
+        }
+    }
+    private void Disparar()
+    {
+        Instantiate(bala, ControladorDisparo.position, ControladorDisparo.rotation);
+    }
 }

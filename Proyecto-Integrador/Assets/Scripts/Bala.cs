@@ -4,24 +4,19 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    [SerializeField] private float velocidad;
-    [SerializeField] private float daño;
-    // Start is called before the first frame update
-    void Start()
-    {
-        Transform.Translate(Vector2.up * velocidad * Time.deltaTime);
-    }
+    [SerializeField] private float Velocidad;
+
+    [SerializeField] private float Daño = 1;
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector2.up * Velocidad * Time.deltaTime);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemigo"))
+        if (!other.CompareTag("Player"))
         {
-            other.GetComponent<Enemigo>().TomarDaño(daño);
             Destroy(gameObject);
         }
     }
