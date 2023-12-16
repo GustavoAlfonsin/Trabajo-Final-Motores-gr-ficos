@@ -6,8 +6,6 @@ public class Bala : MonoBehaviour
 {
     [SerializeField] private float Velocidad;
 
-    [SerializeField] private float Daño = 1;
-
     // Update is called once per frame
     void Update()
     {
@@ -20,4 +18,5 @@ public class Bala : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

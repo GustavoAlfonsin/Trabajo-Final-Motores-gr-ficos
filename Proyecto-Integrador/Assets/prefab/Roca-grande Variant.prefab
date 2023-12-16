@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roca-grande Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1416072628507055035, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69,6 +73,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1416072628507055035, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5901385590646364308}
+    - targetCorrespondingSourceObject: {fileID: 1416072628507055035, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4825517325369517087}
   m_SourcePrefab: {fileID: 100100000, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
 --- !u!1 &4607493143784432700 stripped
 GameObject:
@@ -152,3 +159,18 @@ MonoBehaviour:
   enemigo: {fileID: 4607493143784432700}
   velocidad: 5
   tiempoAparicion: 0
+  vidaAsteroide: 2
+--- !u!114 &-4825517325369517087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607493143784432700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2085a2442b1b83f498228fa66f4b61ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 2
+  puntos: 20
