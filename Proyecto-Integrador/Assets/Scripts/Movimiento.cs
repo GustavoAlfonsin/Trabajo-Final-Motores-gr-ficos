@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    private float velocidad = 3f;
+    private float velocidad = 5f;
     private float velocidadRotacion = 720f;
     private float angulo;
     private float horizontal;

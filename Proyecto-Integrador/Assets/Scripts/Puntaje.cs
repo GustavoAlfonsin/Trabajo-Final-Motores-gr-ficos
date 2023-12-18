@@ -11,11 +11,13 @@ public class Puntaje : MonoBehaviour
 
     public GameObject botonReinicio;
     public GameObject botonSalir;
+    public GameObject mensaje;
     // Start is called before the first frame update
     void Start()
     {
         botonReinicio.SetActive(false);
         botonSalir.SetActive(false);
+        mensaje.SetActive(false);
         Time.timeScale = 1.0f;
         puntajeAcumulado = 0;
         
@@ -38,6 +40,7 @@ public class Puntaje : MonoBehaviour
         Time.timeScale = 0f;
         botonReinicio.SetActive(true);
         botonSalir.SetActive(true);
+        mensaje.SetActive(true);
     }
     public void bton_Reiniciar()
     {
