@@ -5,6 +5,7 @@ using UnityEngine;
 public class Asteroide : MonoBehaviour
 {
     public int vida;
+
     public int puntos;
     private Puntaje controJuego;
 
